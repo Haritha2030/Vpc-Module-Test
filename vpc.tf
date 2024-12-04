@@ -1,5 +1,7 @@
-module "vpc" {
-    source = "../Terraform-Aws-Vpc"
+    module "vpc" {
+    #source = "../Terraform-Aws-Vpc"
+    source = "git::https://github.com/Haritha2030/Terraform-Aws-Vpc.git?ref=main"
+    #vpc_cidr = var.vpc_cidr
     project_name = var.project_name
     environment = var.environment
     common_tags = var.common_tags
